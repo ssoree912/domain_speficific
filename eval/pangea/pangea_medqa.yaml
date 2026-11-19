@@ -1,0 +1,40 @@
+task: pangea_medqa
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: PANGEA_DATA/MEDQA_test_rev.jsonl
+output_type: generate_until
+test_split: test
+doc_to_text: !function pangea_utils.doc_to_text_medqa
+doc_to_target: !function pangea_utils.doc_to_target_medqa
+process_results: !function pangea_utils.process_results_medqa
+metric_list:
+  - metric: regex_acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: regex_extracted
+    aggregation: mean
+    higher_is_better: true
+generation_kwargs:
+  until:
+    - "Question:"
+    - "Question"
+    - "USER:"
+    - "USER"
+    - "ASSISTANT:"
+    - "ASSISTANT"
+    - "Instruction:"
+    - "Instruction"
+    - "Response:"
+    - "Response"
+    - "<|end_of_text|>"
+    - "</s>"
+    - "<s>"
+  # PANGEA: vLLM max_tokens=seq_len (512 by default, 4098 in test_all.sh); 1024 keeps HF generation affordable.
+  max_gen_toks: 1024
+  do_sample: false
+  temperature: 0.0
+repeats: 1
+num_fewshot: 0
+metadata:
+  version: 1.0

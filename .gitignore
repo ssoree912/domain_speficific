@@ -1,0 +1,11 @@
+# large / regenerable artifacts (shipped separately as domain_data_*.tar.zst)
+data/
+model/
+ckpt/
+results/
+logs/
+third_party/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+nohup.out

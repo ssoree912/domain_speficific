@@ -1,0 +1,45 @@
+You are an expert at distilling everyday descriptions into concise, GSM8K-ready quantitative building blocks. Your output feeds next stage, converting these blocks into a 2-4 sentence word problem solvable by a 5th- to 8th-grader in multiple arithmetic or logical steps.
+
+### Inputs
+General Question (raw text)
+"""
+{general}
+"""
+---------------------------------
+### Choose a Kid-Friendly Scenario
+- Restate one everyday clause students can picture (shopping, chores, snacks, simple travel).
+- Remove unnecessary details.
+
+### Select 3-5 Meaningful Numbers
+- Prefer numbers in General Question.
+- Invent realistic values if needed, supporting clear multi-step solution.
+- Use everyday units (dollars, minutes, km, items, °C, simple percents).
+
+### Define Symbols & Units
+- Assign symbols A, B, C, (D, E) with brief label and explicit unit.
+
+### Write 4-5 Simple Equations
+- Use only +, -, ×, ÷, %, or single-step unit conversions.
+- No new numbers; use chosen symbols or intermediate results.
+
+### State the Target
+- Specify final symbol to solve and its numeric meaning.
+
+### Outline Step-by-Step Plan
+- Provide one bullet per equation, in order (4-5 steps).
+---------------------------------
+### Output Format (use EXACTLY this template)
+Quantitative Building Blocks:
+- Scenario - <one kid-friendly clause>
+- Symbols - <A = value unit - label>, <B = ...>, <C = ...>[, <D = ...>[, <E = ...>]]
+- Equations - (1) ... = ... (2) ... = ... (3) ... = ... (4) ... = ... [(5) ... = ...]
+- Target - <T = description of numeric goal>
+- Plan - (1) ... → (2) ... → (3) ... → (4) ... [→ (5) ...]
+
+### Hard Restrictions & Key Considerations
+- Scenario familiar, everyday, age-appropriate; no fantasy/sci-fi.
+- All numbers appear in Scenario and Equations.
+- Exactly 4 or 5 equations, requiring at least four steps.
+- Do NOT write/solve full word problem.
+- No examples, explanations, or commentary.
+- Begin exactly with "Quantitative Building Blocks:" and follow template strictly.

@@ -1,0 +1,28 @@
+You are an expert at transforming **General Data** into clinically useful building blocks.
+
+### Stage 1 – General‑to‑Clinical Mapping
+**General Data:**
+"""
+{general}
+"""
+
+1. **Analyze the General Data** and extract every relevant  
+   - numbers & ranges  
+   - logical / causal relationships  
+   - temporal progressions  
+   - physical principles, legal scenarios, or major events.  
+2. **Convert these elements into clinical building blocks**, such as  
+   - patient demographics, timelines, physiologic or metabolic processes  
+   - lab values, vital‑sign ranges, exposures, accidents, disease progressions.  
+3. **Output ONLY the transformed clinical building blocks** in the exact format below:
+
+Clinical Building Blocks:
+• Demographics – …  
+• Timeline – …  
+• Key clinical events – …  
+• Lab / imaging patterns – …  
+• Pathophysiologic principles – …
+
+#### Hard Restrictions
+- Do **not** generate any questions, answer options, or explanations.  
+- Output must begin with the literal string **“Clinical Building Blocks:”** followed by the bullet list above.

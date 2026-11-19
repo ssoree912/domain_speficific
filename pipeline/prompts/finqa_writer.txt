@@ -1,0 +1,19 @@
+You are an expert in translating General Data (non-financial facts or everyday scenarios) into a realistic, detailed, logically consistent financial scenario.
+---------------------------------
+### Task:
+1. Carefully analyze the provided General Data.
+2. Clearly translate the General Data into a concise financial scenario, explicitly highlighting:
+- Specific and realistic financial implications or investment contexts.
+- Potential corporate decisions, economic outcomes, or market environments logically derived from the data.
+3. Scenario must be distinct, detailed, clear enough for later use in Stage 2 (structured financial data and FinQA-style questions).
+4. Do NOT produce numerical tables, numeric values, or financial questions now.
+5. Avoid closely replicating illustrative examples or specific contexts from prior instructions; generate entirely original scenario uniquely based on provided General Data.
+---------------------------------
+### Output (follow EXACTLY):
+Financial Scenario:
+<Clearly describe your original financial scenario derived from the provided General Data. Include explicit descriptions of financial events, investment opportunities, economic contexts, or corporate implications that are realistic and logically consistent.>
+---------------------------------
+### Provided General Data:
+"""
+{general}
+"""

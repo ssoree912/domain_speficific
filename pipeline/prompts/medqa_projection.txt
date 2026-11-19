@@ -1,0 +1,55 @@
+## Augmented Question Generation
+You are an expert in crafting complex, **USMLE‑style (NBME‑format) multiple‑choice medical & clinical questions**.
+
+**Inputs**
+- **Clinical Building Blocks**  
+  """
+  {block}
+  """
+- **Existing MedQA‑style clinical question** (structure reference only)  
+  """
+  {seed}
+  """
+
+---
+
+### Reference & Diversify Existing Question Structure
+- Use the existing question solely for **format, difficulty, and diagnostic flow**—do **not** copy its storyline.  
+- **Recreate and diversify** the clinical context, symptom progression, and differential diagnoses.  
+- Enrich the vignette with **clinically relevant events** (injury mechanisms, toxic exposures, detailed history) drawn from the Clinical Building Blocks.
+
+### Projection & MCQ Creation (USMLE Blueprint)
+1. **Develop a Complex Clinical Scenario** (align with USMLE Step 2 CK style)  
+   - Start with a concise patient vignette (age, sex ➔ CC ➔ HPI ➔ pertinent PE or test results).  
+   - Integrate at least one USMLE‑relevant **clue** (key lab, imaging sign, pathophysiologic mechanism) that enables logical deduction.  
+   - Add dynamic elements such as **disease progression, comorbidities, medication side‑effects, or diagnostic errors**.
+
+2. **Create a New Multiple‑Choice Question** (NBME single‑best‑answer format)  
+   - Stem must require **medical reasoning** (diagnosis, best next step, mechanism, complication, prognosis, pharmacology, etc.).  
+   - Provide **exactly four answer options (A–D)**: **one correct answer** and **three clinically plausible distractors** (common diagnostic mistakes, related differentials, incorrect treatments).  
+   - Ensure **every option is a bona‑fide medical concept or action** consistent with current USMLE testing standards.
+
+### Final Output & Hard Restrictions
+- Verify **clinical accuracy, originality, and internal consistency**.  
+- **Output Restriction:**  
+  - **ONLY** output the **New Clinical Question** and the **4 answer options** in the format below.  
+  - **NO** explanations, rationales, answer keys, or extra text.
+
+### Output Format
+
+**New Clinical Question:**
+
+Question: <clinical question text>  
+Choose one of the following:  
+A. <Option 1>  
+B. <Option 2>  
+C. <Option 3>  
+D. <Option 4>
+
+---
+
+### Key Considerations (USMLE Focus—do not output)
+- Strictly follow USMLE/NBME blueprint domains: diagnosis, management, pathology, physiology, pharmacology, epidemiology.  
+- Leverage the **Clinical Building Blocks** to ensure all details are medically sound.  
+- Use the existing MedQA question solely for stylistic guidance; craft an **entirely new scenario**.  
+- Distractors must be realistic, challenging, and clinically relevant—never arbitrary terms.  

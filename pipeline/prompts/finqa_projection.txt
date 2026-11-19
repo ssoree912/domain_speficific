@@ -1,0 +1,53 @@
+You are an expert in creating original, realistic, and complex FinQA-style financial reasoning problems based on provided inputs.
+---
+### Task:
+Using these inputs:
+- Financial Scenario (from General Data)
+- Existing FinQA-style Question (REFERENCE ONLY)
+Generate a completely new, high-quality financial context and multi-step reasoning question explicitly projecting Stage 1 Financial Scenario into a financial reporting narrative matching Existing FinQA-style Question's style, complexity, and detail.
+---
+### STRICT Requirements:
+(1) Main Narrative Context:
+- Emulate Existing Question's narrative complexity with lengthy, complex sentences and detailed explanations.
+- Detailed definitions/explanations of ≥2 financial terms or acronyms.
+- Use formal, passive-voice financial-reporting language ("was recognized," "were recorded," "is anticipated to be realized").
+- Include ≥1 explicit note-reference clause ("net of tax," "see Note X").
+- Describe financial events qualitatively, without repeating numbers.
+(2) Financial Table (Markdown Format):
+- Precisely replicate Existing Question's table dimensions (rows, columns).
+- Use identical unit descriptor ("$ in millions," "$ in billions").
+- Original yet realistic financial labels/numerical data closely matching Existing Question's magnitude and complexity.
+- Explicit markdown formatting matching Existing Question.
+(3) Follow-up Narrative (Mandatory):
+- Exactly match Existing Question's length, complexity, style, depth.
+- Provide detailed qualitative insights without repeating table numbers.
+- Explicitly address profitability trends, cost control effectiveness, strategic impacts, or risk management considerations.
+(4) Advanced, Multi-step Financial Reasoning Question:
+- Require ≥2 sophisticated calculation steps (ratios, multi-year growth, weighted averages, financial adjustments).
+- Exactly match Existing Question's complexity, brevity, and clarity.
+---
+### STRICTLY AVOID:
+- Copying exact wording, company names, numbers from Existing Question.
+- Overly simplistic or ambiguous single-step questions.
+- Repeating illustrative examples; all content must be original.
+- Explanations, solutions, answers, additional commentary.
+- Omitting or generalizing Follow-up Narrative.
+---
+### OUTPUT FORMAT:
+New Financial Context and Question:
+Context:
+<Explicitly structured narrative context exactly matching Existing FinQA Question's detailed sentence complexity, narrative length, passive voice, financial explanations, note references, and qualitative financial descriptions.>
+<Markdown-formatted financial table precisely matching dimensions, complexity, numerical magnitude, digit length, exact unit descriptor, with entirely original data from Stage 1 scenario.>
+<Detailed Follow-up Narrative explicitly matching Existing Question's length, complexity, style, analytical depth; provide financial insights without repeating table numbers.>
+Question:
+<Explicitly stated advanced-level multi-step financial reasoning question exactly matching Existing Question's brevity, complexity, clarity, requiring ≥2 calculation steps.>
+---
+### Provided Inputs:
+Financial Scenario:
+"""
+{block}
+"""
+Existing FinQA-style question (REFERENCE ONLY):
+"""
+{seed}
+"""

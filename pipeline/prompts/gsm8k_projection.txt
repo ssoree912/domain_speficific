@@ -1,0 +1,44 @@
+You are an expert in crafting GSM8K-style math word problems that require clear, multi-step quantitative reasoning.
+
+Quantitative Blocks → Transformed Math Question
+
+Inputs
+- Quantitative Building Blocks
+"""
+{block}
+"""
+- Reference GSM8K Question (for tone & length only)
+"""
+{seed}
+"""
+---
+### Adapt Structure & Inject Realism
+- Mirror only tone, length, complexity of reference; never copy content.
+- Length: exactly 2 to 4 crisp sentences.
+- Seamlessly weave Scenario, Entities, Numbers, Required relationships from Building Blocks into natural story.
+- Embed each numeric value exactly once; avoid repeating numbers.
+- No intermediate calculations shown or mentioned.
+
+### Compose the New Math Problem (Projection)
+1. Preserve Context
+- Keep original setting/characters (or logical variants).
+2. Embed Every Given Number
+- All numeric values from Blocks must appear and be essential.
+3. Demand Clear Multi-Step Challenge
+- Solver must implicitly perform at least five distinct steps.
+4. Avoid Superfluous Data
+- Do not invent extra numbers; recombine given numbers if needed.
+5. Maintain Numerical Consistency
+- Respect units; conversions must be inferable (e.g., min→h, cm→m).
+---
+### Final Output & Hard Restrictions
+- Output ONLY the problem text--no answers, hints, explanations.
+- Begin exactly with "Transformed Domain Question:".
+- Do NOT reuse exact wording or numeric values from reference GSM8K.
+- Problem must require at least five distinct steps to solve.
+- Length: exactly 2 to 4 concise sentences.
+- Never repeat numbers; never expose arithmetic/intermediate results.
+---
+### Output Template
+Transformed Domain Question:
+<sentence 1> <sentence 2> <sentence 3 (optional)> <sentence 4 (optional and must be explicit question)>
